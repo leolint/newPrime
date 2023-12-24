@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.min.css">
+    <title>PrimeClub</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+            <div class="header_wrapper-logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <nav class="header_wrapper-nav">
+                <ul class="header_wrapper-nav--list">
+                    <li class="header_wrapper-nav--list__link" data-button="adress">Адреса</li>
+                    <li class="header_wrapper-nav--list__link" data-button="menu">Меню</li>
+                    <li class="header_wrapper-nav--list__link" data-button="hookas">Кальяни</li>
+                    <li class="header_wrapper-nav--list__link" data-button="bar">Бар</li>
+                    <li class="header_wrapper-nav--list__link" data-button="tariffs">Тарифи</li>
+                </ul>
+                <ul id="mobileListLink" class="header_wrapper-nav--list">
+                    <li class="header_wrapper-nav--list__link">
+                        <a class="header_mobile-link" href="https://maps.app.goo.gl/gmJqBqUX9xci9uPh7" target="_blank">
+                            Адреса
+                        </a>
+                    </li>
+                    <li class="header_wrapper-nav--list__link">
+                        <a class="header_mobile-link" href="https://www.prime-club.com.ua/PrimeMenu/" target="_blank">
+                            Меню
+                        </a>
+                    </li>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header_wrapper-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="menusImages">
+        <div id="adress" class="menusImages_wrapper">
+            <img src="./img/primeMap.jpg" alt="" data-nav-images="navImage">
+        </div>
+        <div id="menu" class="menusImages_wrapper">
+            <div id="menuSlider">
+                <div id="image">
+                    <img class="sliderImage" src="./img/menuOne.jpg" alt="" data-nav-images="navImage">
+                    <img class="sliderImage" src="./img/menuTwo.jpg" alt="" data-nav-images="navImage">
+                    <img class="sliderImage" src="./img/sushi.png" alt="" data-nav-images="navImage">
+                </div>
+                <div class="menusImages_wrapper-sliderButtons">
+                    <button id="menuSliderPrev" class="menusImages_wrapper-sliderButtons-button">Назад</button>
+                    <button id="menuSliderNext" class="menusImages_wrapper-sliderButtons-button">Далі</button>
+                </div>
+            </div>
+        </div>
+        <div id="hookas" class="menusImages_wrapper">
+            <img src="./img/hookas.jpg" alt="" data-nav-images="navImage">
+        </div>
+        <div id="bar" class="menusImages_wrapper">
+            <img src="./img/bar.jpg" alt="" data-nav-images="navImage">
+        </div>
+        <div id="tariffs" class="menusImages_wrapper">
+            <img src="./img/tariffsOne.jpg" alt="" data-nav-images="navImage">
+            <img src="./img/tariffsTwo.jpg" alt="" data-nav-images="navImage">
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="main_wrapper">
+            <video class="main_wrapper-video" autoplay loop muted>
+                <source src="./video/c5ed6b3b-71e2-406d-85bb-bed6c0701279.mp4" type="video/mp4">
+            </video>
+        </div>
+        <section class="primeClub">
+            <div class="container">
+                <div class="primeClub_wrapper">
+                    <h1 class="primeClub_wrapper-title">
+                        Prime Club
+                    </h1>
+                    <h2 class="primeClub_wrapper-subtitle">
+                        Особливий простір для відпочинку
+                    </h2>
+                    <ul class="primeClub_wrapper-list">
+                        <li class="primeClub_wrapper-list__item">Кальяни</li>
+                        <li class="primeClub_wrapper-list__item">Доставка кальянів</li>
+                        <li class="primeClub_wrapper-list__item">Бар</li>
+                        <li class="primeClub_wrapper-list__item">Піца</li>
+                        <li class="primeClub_wrapper-list__item">Суші</li>
+                        <li class="primeClub_wrapper-list__item">Lounge</li>
+                        <li class="primeClub_wrapper-list__item">Комп'ютери</li>
+                        <li class="primeClub_wrapper-list__item">Консолі</li>
+                        <li class="primeClub_wrapper-list__item">Настiльнi Iгри</li>
+                        <li class="primeClub_wrapper-list__item">Cinema Room</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="videos">
+            <div class="container">
+                <div class="videos_wrapper" data-observeWrapper="observe">
+                    <video controls>
+                        <source src="./video/primeVideo.mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section class="lounge">
+            <h3 class="title">Lounge</h3>
+            <div class="container">
+                <div class="lounge_wrapper" data-observeWrapper="observe">
+                    <div class="lounge_wrapper-image">
+                        <div class="lounge_wrapper-image__item">
+                            <img src="./img/loungeFirstTable.jpg" alt="">
+                            <figcaption>Послуги та ассортимент</figcaption>
+                        </div>
+                        <div class="lounge_wrapper-image__item">
+                            <img src="./img/loungeFirstTable.jpg" alt="">
+                            <figcaption>Послуги та ассортимент</figcaption>
+                        </div>
+                        <div class="lounge_wrapper-image__item">
+                            <img src="./img/loungeFirstTable.jpg" alt="">
+                            <figcaption>Послуги та ассортимент</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="computers">
+            <h3 class="title">Компютери та консолі</h3>
+            <div class="container">
+                <div class="computers_wrapper" data-observeWrapper="observe">
+                    <div class="computers_wrapper-item">
+                        <img src="./img/cyberRoomNew.jpg" alt="">
+                        <figcaption>
+                            Cyber Room<br>
+                            <span>Ціна</span>
+                        </figcaption>
+                    </div>
+                    <div class="computers_wrapper-item">
+                        <img src="./img/cyberRoomNew.jpg" alt="">
+                        <figcaption>
+                            Vip Room<br>
+                            <span>Ціна</span>
+                        </figcaption>
+                    </div>
+                    <div class="computers_wrapper-item">
+                        <img src="./img/cyberRoomNew.jpg" alt="">
+                        <figcaption>
+                            Vip Plus<br>
+                            <span>Ціна</span>
+                        </figcaption>
+                    </div>
+                    <div class="computers_wrapper-item">
+                        <img src="./img/cyberRoomNew.jpg" alt="">
+                        <figcaption>
+                            Lux<br>
+                            <span>Ціна</span>
+                        </figcaption>
+                    </div>
+                    <div class="computers_wrapper-item">
+                        <img src="./img/cyberRoomNew.jpg" alt="">
+                        <figcaption>
+                            Xbox<br>
+                            <span>Ціна</span>
+                        </figcaption>
+                    </div>
+                    <div class="computers_wrapper-item">
+                        <img src="./img/cyberRoomNew.jpg" alt="">
+                        <figcaption>
+                            Sony PlayStation 4<br>
+                            <span>Ціна</span>
+                        </figcaption>
+                    </div>
+
+                    <div class="computers_wrapper-item">
+                        <img src="./img/cyberRoomNew.jpg" alt="">
+                        <figcaption>
+                            Sony PlayStation 5 <br>
+                            <span>Ціна</span>
+                        </figcaption>
+                    </div>
+                    <div class="computers_wrapper-item">
+                        <img src="./img/cyberRoomNew.jpg" alt="">
+                        <figcaption>
+                            Xbox X <br>
+                            <span>Ціна</span>
+                        </figcaption>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cinemaRoom">
+            <h4 class="title">Cinema Room</h4>
+            <div class="container">
+                <div class="cinemaRoom_wrapper " data-observeWrapper="observe">
+                    <ul class="cinemaRoom_wrapper-list">
+                        <li>Sony PlayStation 5</li>
+                        <li>Cinema</li>
+                        <li>Vr</li>
+                        <li>Megogo</li>
+                    </ul>
+                    <div class="cinemaRoom_wrapper-images">
+                        <img src="./img/cinemaOne.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_logo">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <div class="container">
+            <div class="footer_wrapper">
+                <h4 class="footer_wrapper-title">
+                    Prime Club - це молодіжний простір,<br>
+                    в якому є місце для будь-якого віку
+                </h4>
+                <ul class="footer_wrapper-list">
+                    <li>Перелік послуг:</li>
+                    <li>Лаунж зона</li>
+                    <li>Бар та кухня</li>
+                    <li>Консолі</li>
+                    <li>Коп'ютерні кімнати</li>
+                    <li>VIP room</li>
+                    <li>Cinema room</li>
+                </ul>
+                <p class="footer_wrapper-description">
+                    У нас ви дізнаєтесь, що таке по-справжньому крутий відпочинок <br>
+                    Шевченка 11<br>
+                    Зупинка: Музей "Проскурівського підпілля"<br>
+                    Телефон: <a class="footer_wrapper-description__link" href="tel:+380988800908">+380988800908</a> <br>
+                    WELCOME
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs"></script>
+    <script src="./js/sectionsAnimation.js"></script>
+    <script type="module" src="./js/slider.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/openMobileMenu.js"></script>
+</body>
+
+</html>

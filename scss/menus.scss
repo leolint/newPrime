@@ -1,0 +1,74 @@
+@import 'mixins';
+
+.menusImages {
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+
+    &_wrapper {
+        display: none;
+        justify-content: center;
+
+        img {
+            object-fit: cover;
+            max-height: 700px;
+            margin: 10px;
+            cursor: pointer;
+            @include br(xl) {
+                max-height: 500px;
+            }
+        }
+
+        &-sliderButtons {
+            display: flex;
+            position: absolute;
+            bottom: -17%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include br(xl) {
+                bottom: -23%;
+            }
+            &-button {
+                display: block;
+                width: 200px;
+                height: 40px;
+                border-radius: 6px;
+                margin: 20px;
+                cursor: pointer;
+                border: 1px white solid;
+                background-color: black;
+                color: white;
+                text-transform: uppercase;
+                transition: 0.3s ease;
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+
+    #menuSlider {
+        display: flex;
+        width: 970px;
+        overflow: hidden;
+        @include br (xl) {
+            width: 700px;
+        }
+        img {
+            width: 970px;
+            margin: 0px 0px 0px 0px;
+            @include br (xl) {
+                width: 700px;
+            }
+        }
+        #image {
+            display: flex;
+            width: 100%;
+        }
+    }
+}
+
+.open {
+    display: flex;
+}

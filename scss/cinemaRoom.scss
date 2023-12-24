@@ -1,0 +1,38 @@
+@import 'mixins';
+
+.cinemaRoom {
+    width: 100%;
+    color: white;
+    margin-bottom: 50px;
+    &_wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        @include br(md) {
+            flex-direction: column-reverse;
+            align-content: start;
+        }
+        &-list {
+            list-style-type: none;
+            font-size: 30px;
+            padding: 0px 0px 0px 0px;
+            li {
+                margin: 30px 0px 0px 30px;
+                @include br(md) {
+                    margin: 10px 0px 0px 10px;
+                    text-align: center;
+                }
+            }
+        }
+        &-images {
+            img {
+                width: 500px;
+                border-radius: 3px;
+                border: 2px rgba(255, 255, 255, 0.404) solid;
+                @include br(sm) {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}

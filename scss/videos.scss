@@ -1,0 +1,16 @@
+@import 'mixins';
+
+.videos {
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    &_wrapper {
+        display: flex;
+        justify-content: center;
+        video {
+            width: 700px;
+            @include br(sm) {
+                width: 300px;
+            }
+        }
+    }
+}

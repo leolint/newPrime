@@ -1,0 +1,117 @@
+@import 'mixins';
+@import 'header';
+@import 'menus';
+@import 'primeClub';
+@import 'videos';
+@import 'computers';
+@import 'lounge';
+@import 'cinemaRoom';
+@import 'footer';
+
+* {
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+
+body {
+    max-width: 1440px 100%;
+    box-sizing: border-box;
+    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+
+    @include br(xl) {
+        max-width: 1024px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    @include br(lg) {
+        max-width: 992px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    @include br(md) {
+        max-width: 768px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    @include br(sm) {
+        max-width: 425px;
+        padding: 0 24px;
+        box-sizing: border-box;
+        margin: 0px 0px 0px 0px;
+    }
+
+    @include br(xs) {
+        max-width: 375px;
+        padding: 0 5px;
+        box-sizing: border-box;
+        margin: 0px 0px 0px 0px;
+    }
+
+    @include br(xxs) {
+        max-width: 320px;
+        padding: 0 5px;
+        box-sizing: border-box;
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+
+    &_wrapper {
+        width: 100%;
+        position: fixed;
+        top: 0%;
+        z-index: -1;
+
+        &-video {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            filter: brightness(0.4);
+        }
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+}
+
+.inView {
+    transform: translateY(0px) !important;
+    z-index: 1 !important;
+    opacity: 1 !important;
+    transition: 0.5s ease;
+}
+
+[data-observeWrapper="observe"] {
+    transform: translateY(400px);
+    position: relative;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s ease;
+    @include br(md) {
+        position: static;
+        transform: translateY(0px);
+    }
+}
